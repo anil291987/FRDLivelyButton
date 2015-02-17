@@ -11,6 +11,7 @@
 
 typedef enum {
     kFRDLivelyButtonStyleHamburger,
+    kFRDLivelyButtonStyleDoubleLines,
     kFRDLivelyButtonStyleClose,
     kFRDLivelyButtonStylePlus,
     kFRDLivelyButtonStyleCirclePlus,

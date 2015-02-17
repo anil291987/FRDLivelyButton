@@ -46,7 +46,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self.burgerButton setStyle:kFRDLivelyButtonStyleHamburger animated:NO];
+    [self.burgerButton setStyle:kFRDLivelyButtonStyleDoubleLines animated:NO];
     [self.plusCircleButton setStyle:kFRDLivelyButtonStyleCirclePlus animated:NO];
     [self.plustButton setStyle:kFRDLivelyButtonStylePlus animated:NO];
     [self.closeButton setStyle:kFRDLivelyButtonStyleClose animated:NO];
