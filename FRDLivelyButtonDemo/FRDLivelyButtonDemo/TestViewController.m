@@ -29,7 +29,7 @@
 
 @implementation TestViewController
 {
-    kFRDLivelyButtonStyle newStyle;
+    FRDLivelyButtonStyle newStyle;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -46,27 +46,27 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self.burgerButton setStyle:kFRDLivelyButtonStyleDoubleLines animated:NO];
-    [self.plusCircleButton setStyle:kFRDLivelyButtonStyleCirclePlus animated:NO];
-    [self.plustButton setStyle:kFRDLivelyButtonStylePlus animated:NO];
-    [self.closeButton setStyle:kFRDLivelyButtonStyleClose animated:NO];
-    [self.closeCircleButton setStyle:kFRDLivelyButtonStyleCircleClose animated:NO];
-    [self.upCaretButton setStyle:kFRDLivelyButtonStyleCaretUp animated:NO];
-    [self.downCaretButton setStyle:kFRDLivelyButtonStyleCaretDown animated:NO];
-    [self.leftCaretButton setStyle:kFRDLivelyButtonStyleCaretLeft animated:NO];
-    [self.rightCaretButton setStyle:kFRDLivelyButtonStyleCaretRight animated:NO];
-    [self.leftArrowButton setStyle:kFRDLivelyButtonStyleArrowLeft animated:NO];
-    [self.rightArrowButton setStyle:kFRDLivelyButtonStyleArrowRight animated:NO];
+    [self.burgerButton setStyle:FRDLivelyButtonStyleDoubleLines animated:NO];
+    [self.plusCircleButton setStyle:FRDLivelyButtonStyleCirclePlus animated:NO];
+    [self.plustButton setStyle:FRDLivelyButtonStyleVerticalLines animated:NO];
+    [self.closeButton setStyle:FRDLivelyButtonStyleClose animated:NO];
+    [self.closeCircleButton setStyle:FRDLivelyButtonStyleCircleClose animated:NO];
+    [self.upCaretButton setStyle:FRDLivelyButtonStyleCaretUp animated:NO];
+    [self.downCaretButton setStyle:FRDLivelyButtonStyleCaretDown animated:NO];
+    [self.leftCaretButton setStyle:FRDLivelyButtonStyleCaretLeft animated:NO];
+    [self.rightCaretButton setStyle:FRDLivelyButtonStyleCaretRight animated:NO];
+    [self.leftArrowButton setStyle:FRDLivelyButtonStyleArrowLeft animated:NO];
+    [self.rightArrowButton setStyle:FRDLivelyButtonStyleArrowRight animated:NO];
     
-    [self.bigButton setStyle:kFRDLivelyButtonStyleClose animated:YES];
-    [self.bigButton setOptions:@{kFRDLivelyButtonLineWidth: @(4.0f)}];
+    [self.bigButton setStyle:FRDLivelyButtonStyleClose animated:YES];
+    [self.bigButton setOptions:@{FRDLivelyButtonLineWidth: @(4.0f)}];
     
     FRDLivelyButton *button = [[FRDLivelyButton alloc] initWithFrame:CGRectMake(0,0,36,28)];
-    [button setOptions:@{ kFRDLivelyButtonLineWidth: @(2.0f),
-                          kFRDLivelyButtonHighlightedColor: [UIColor colorWithRed:0.5 green:0.8 blue:1.0 alpha:1.0],
-                          kFRDLivelyButtonColor: [UIColor blueColor]
+    [button setOptions:@{ FRDLivelyButtonLineWidth: @(2.0f),
+                          FRDLivelyButtonHighlightedColor: [UIColor colorWithRed:0.5 green:0.8 blue:1.0 alpha:1.0],
+                          FRDLivelyButtonColor: [UIColor blueColor]
                           }];
-    [button setStyle:kFRDLivelyButtonStyleHamburger animated:NO];
+    [button setStyle:FRDLivelyButtonStyleHamburger animated:NO];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.rightBarButtonItem = buttonItem;

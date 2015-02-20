@@ -29,12 +29,12 @@
     [super viewDidLoad];
     
     FRDLivelyButton *button = [[FRDLivelyButton alloc] initWithFrame:CGRectMake(0,0,36,28)];
-    [button setOptions:@{ kFRDLivelyButtonLineWidth: @(2.0f),
-                          kFRDLivelyButtonHighlightAnimationDuration: @(1.0f),
-                          kFRDLivelyButtonHighlightedColor: [UIColor colorWithRed:0.5 green:0.8 blue:1.0 alpha:1.0],
-                          kFRDLivelyButtonColor: [UIColor blueColor]
+    [button setOptions:@{ FRDLivelyButtonLineWidth: @(2.0f),
+                          FRDLivelyButtonHighlightAnimationDuration: @(1.0f),
+                          FRDLivelyButtonHighlightedColor: [UIColor colorWithRed:0.5 green:0.8 blue:1.0 alpha:1.0],
+                          FRDLivelyButtonColor: [UIColor blueColor]
                           }];
-    [button setStyle:kFRDLivelyButtonStyleArrowLeft animated:NO];
+    [button setStyle:FRDLivelyButtonStyleArrowLeft animated:NO];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchDown];
     UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.leftBarButtonItem = buttonItem;

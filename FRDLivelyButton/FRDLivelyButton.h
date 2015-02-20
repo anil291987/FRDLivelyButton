@@ -12,6 +12,7 @@
 typedef NS_ENUM(NSUInteger, FRDLivelyButtonStyle) {
     FRDLivelyButtonStyleHamburger,
     FRDLivelyButtonStyleDoubleLines,
+    FRDLivelyButtonStyleVerticalLines,
     FRDLivelyButtonStyleClose,
     FRDLivelyButtonStylePlus,
     FRDLivelyButtonStyleCirclePlus,

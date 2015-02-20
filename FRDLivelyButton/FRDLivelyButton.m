@@ -219,13 +219,21 @@ NSString *const FRDLivelyButtonStyleChangeAnimationDuration = @"FRDLivelyButtonS
         newLine2Path = [self createCenteredLineWithRadius:self.dimension/2.0f angle:0 offset:CGPointMake(0, -self.dimension/2.0f/GOLDEN_RATIO)];
         newLine3Path = [self createCenteredLineWithRadius:self.dimension/2.0f angle:0 offset:CGPointMake(0, self.dimension/2.0f/GOLDEN_RATIO)];
         
-    }else if (style == FRDLivelyButtonStyleDoubleLines) {
+    } else if (style == FRDLivelyButtonStyleDoubleLines) {
         newCirclePath = [self createCenteredCircleWithRadius:self.dimension/20.0f];
         newCircleAlpha = 0.0f;
         newLine1Path = [self createCenteredLineWithRadius:self.dimension/2.0f angle:0 offset:CGPointMake(0, 0)];
         newLine1Alpha = 0.0f;
         newLine2Path = [self createCenteredLineWithRadius:self.dimension/2.0f angle:0 offset:CGPointMake(0, -self.dimension/3.0f/GOLDEN_RATIO)];
         newLine3Path = [self createCenteredLineWithRadius:self.dimension/2.0f angle:0 offset:CGPointMake(0, self.dimension/3.0f/GOLDEN_RATIO)];
+        
+    } else if (style == FRDLivelyButtonStyleVerticalLines) {
+        newCirclePath = [self createCenteredCircleWithRadius:self.dimension/20.0f];
+        newCircleAlpha = 0.0f;
+        newLine1Path = [self createCenteredLineWithRadius:self.dimension/2.0f angle:0 offset:CGPointMake(0, 0)];
+        newLine1Alpha = 0.0f;
+        newLine2Path = [self createCenteredLineWithRadius:self.dimension/2.0f angle:+M_PI_2 offset:CGPointMake(self.dimension/3.0f/GOLDEN_RATIO, 0)];
+        newLine3Path = [self createCenteredLineWithRadius:self.dimension/2.0f angle:+M_PI_2 offset:CGPointMake(-self.dimension/3.0f/GOLDEN_RATIO, 0)];
         
     } else if (style == FRDLivelyButtonStylePlus) {
         newCirclePath = [self createCenteredCircleWithRadius:self.dimension/20.0f];
